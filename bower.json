@@ -1,0 +1,21 @@
+{
+  "name": "online-photos",
+  "description": "This is a just online photo website",
+  "main": "index.js",
+  "authors": [
+    "Minh"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

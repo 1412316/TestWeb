@@ -1,0 +1,26 @@
+<div class = "row">
+	<div class = "col-md-12">
+		<form class = "form-inline" action = "/photos">
+			<div class = "form-group">
+				<input type = "text" name = "keyword" placeholder = "Enter your keyword" class = "form-control">
+			</div>
+			<div class = "form-group">
+				<button type = "submit" class = "btn btn-primary">Search</button>
+			</div>
+		</form>
+
+<div class = "row">
+	{{#if isNoResults}}
+	<div class = "col-md-12">
+		Không có kết quả!
+	</div>
+	{{else}}
+		{{#each image}}
+		<div class="col-sm-3 col-xs-6">
+			<div class="photo">
+				<a href="photos/{{this.id}}"><img src="{{this.url}}"></a>
+			</div>
+		</div>
+		{{/each}}
+	{{/if}}
+</div>
