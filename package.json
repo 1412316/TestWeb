@@ -4,7 +4,8 @@
   "description": "This is a just online photo website",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "install": "node_modules/.bin/bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Minh",
