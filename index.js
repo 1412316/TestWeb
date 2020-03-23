@@ -4,7 +4,7 @@ var app = express();
 require('./config')(app);
 
 //star server
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
 	console.log(`Example app listening on port ${port}!`);
 });
